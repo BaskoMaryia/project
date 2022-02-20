@@ -1,8 +1,9 @@
 "use strict";
 
-const category = "toys";
-console.log(`htps://url.com/${category}/5`);
+let incr = 10;
+let decr = 10;
 
 
-const user = "UserName";
-alert(`Hi, ${user}`);
+console.log(++incr);
+console.log(--decr);
+console.log(5%2);
