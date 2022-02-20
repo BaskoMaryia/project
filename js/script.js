@@ -3,10 +3,11 @@
 let lastFilm;
 let lastFilmRating;
 let numberOfFilms;
+
 do {
     numberOfFilms = +prompt("How many films did you watch?", "");
 }
-while (lastFilm == null || lastFilm.length == 0 || lastFilm.length > 50 );
+while (numberOfFilms == 0 );
 
 let personalMovieDB = {
     count: numberOfFilms,
@@ -15,8 +16,8 @@ let personalMovieDB = {
     genres: [],
     privat: false
 };
-let i;
-for (i = 1; i <= numberOfFilms; i++) {
+
+for (let i = 1; i <= numberOfFilms; i++) {
     do {
         lastFilm = prompt("Last watched film?", "");
     }
